@@ -57,7 +57,7 @@ resource "aws_instance" "dophin" {
   vpc_security_group_ids = ["sg-069a22b4ae19d390c"]
   key_name = var.ssh_key_name
 
-  tags {
+  tags = {
     Name = "${var.prefix}-server"
   }
 

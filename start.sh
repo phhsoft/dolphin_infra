@@ -26,4 +26,6 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 
 sudo systemctl start docker
 
-sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server:stable
+sudo yum install openssh-clients
+
+#sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server:stable
